@@ -36,9 +36,10 @@ def get_requirements(file_path: str) -> List[str]:
 # Call the setup() function to define the package metadata and configuration
 setup(
     name='mlproject',  # Name of the project/package
-    version='0.0.01',  # Version of the project
+    version='0.0.03',  # Version of the project
+    author='farhan'
     author_email='farhan@gmail.com',  # Email of the project author or maintainer
     packages=find_packages(where='src'),  # Automatically find and include all packages in the project directory
-    package_dir={'': 'src'},  # Map root (empty string) to 'src' directory
+    #package_dir={'': 'src'},  # Map root (empty string) to 'src' directory
     install_requires=get_requirements('requirements.txt')  # Install dependencies listed in requirements.txt
 )
